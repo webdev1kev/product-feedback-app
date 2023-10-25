@@ -4,29 +4,29 @@
 
 @layer base {
   h1 {
-    @apply text-2xl tracking-[-0.333px] leading-normal font-bold;
+    @apply text-2xl tracking-[-0.333px] leading-normal font-bold text-offDarkBlue;
   }
 
   h2 {
-    @apply text-xl tracking-[-0.25px] leading-normal font-bold;
+    @apply text-xl tracking-[-0.25px] leading-normal font-bold text-offDarkBlue;
   }
 
   h3 {
-    @apply text-lg tracking-[-0.25px] leading-normal font-bold;
+    @apply text-lg tracking-[-0.25px] leading-normal font-bold text-offDarkBlue;
   }
 
   h4 {
-    @apply text-sm tracking-[-0.2px] leading-normal font-bold;
+    @apply text-sm tracking-[-0.2px] leading-normal font-bold text-offDarkBlue;
   }
 }
 
 @layer components {
   .body-2 {
-    @apply text-off-dark-blue text-[15px];
+    @apply text-off-dark-blue text-[15px] text-offDarkBlue;
   }
 
   .body-3 {
-    @apply text-off-dark-blue text-[13px] font-semibold;
+    @apply text-off-dark-blue text-[13px] font-semibold text-offDarkBlue;
   }
 
   .button {

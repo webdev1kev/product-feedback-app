@@ -2,5 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-2xl tracking-[-0.333px] leading-normal font-bold;
+  }
+
+  h2 {
+    @apply text-xl tracking-[-0.25px] leading-normal font-bold;
+  }
+
+  h3 {
+    @apply text-lg tracking-[-0.25px] leading-normal font-bold;
+  }
+
+  h4 {
+    @apply text-sm tracking-[-0.2px] leading-normal font-bold;
+  }
+}
+
+@layer components {
+  .body-2 {
+    @apply text-off-dark-blue text-[15px];
+  }
+
+  .body-3 {
+    @apply text-off-dark-blue text-[13px] font-semibold;
+  }
+
+  .button {
+    border-radius: 10px;
+    width: 160px;
+    height: 45px;
+    @apply text-white font-bold;
+
+    transition: background-color 0.25s;
+  }
+
+  .button-1 {
+    background-color: theme(colors.purple);
+  }
+
+  .button-1:hover {
+    background-color: theme(colors.purpleHover);
+  }
+
+  .button-2 {
+    background-color: theme(colors.blue);
+  }
+
+  .button-2:hover {
+    background-color: theme(colors.blueHover);
+  }
+
+  .button-3 {
+    background-color: theme(colors.offDarkBlue);
+  }
+
+  .button-3:hover {
+    background-color: theme(colors.darkBlueHover);
+  }
+
+  .button-4 {
+    background-color: theme(colors.orange);
+  }
+
+  .button-4:hover {
+    background-color: theme(colors.orangeHover);
+  }
+
+  .button-back,
+  .button-back-transparent {
+    width: 155px;
+    height: 55px;
+  }
+
+  .button-back-transparent::before,
+  .button-back::before {
+    display: inline;
+    margin-right: 1rem;
+  }
+
+  .button-back:hover,
+  .button-back-transparent:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  .button-back-transparent {
+    background-color: transparent;
+    color: theme(colors.offDarkBlue);
+  }
+
+  .button-back-transparent::before {
+    content: url("/assets/back-icon-blue.svg");
+  }
+
+  .button-back {
+    @apply text-white;
+    background-color: theme(colors.darkBlue);
+  }
+
+  .button-back::before {
+    content: url("/assets/back-icon-light-blue.svg");
+  }
+}
+
 @media (prefers-color-scheme: dark) {
 }
